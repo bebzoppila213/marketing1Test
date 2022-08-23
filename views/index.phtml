@@ -1,0 +1,42 @@
+<?php
+    require_once 'src/App/components/Header.php';
+?>
+    <main class="main">
+        <div class="main__inner">
+            <div class="main__slider swiper">
+                <div class="slider__num">
+                    Слайд <span class="slider__num-indx">1</span>
+                </div>
+                <div class="main__slider-wrapper swiper-wrapper">
+                    <div class="main__slider-item swiper-slide">
+                            <div class="main__slider-content">
+                            <h2 class="main__slider-title">Купить электросамокат</h2>
+                            <h3 class="main__slider-subtitle">Самые выгодные цены у нас</h3>
+                            </div>
+                            <div class="main__slider-form">
+                                <?php include 'src/App/components/Form.php'; ?>
+                            </div>
+                    </div>
+                    <div class="main__slider-item swiper-slide">
+                    <div class="main__slider-content">
+                            <h2 class="main__slider-title">Купить электросамокат</h2>
+                            <h3 class="main__slider-subtitle">С доставкой по Севастополю</h3>
+                                <button class="main__slider-btn btn btn__green btn-modal">Заказать</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal">
+        <div class="modal__inner">
+            <?php include 'src/App/components/Form.php'; ?>
+        </div>
+    </div>
+
+    <script type="module" src="/views/js/slider.js"></script>
+    <script type="module" src="/views/js/modal.js"></script>
+</body>
+</html>

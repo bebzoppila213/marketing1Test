@@ -1,0 +1,11 @@
+{
+    "require": {
+        "miladrahimi/phprouter": "5.*",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App"
+        }
+    }
+}

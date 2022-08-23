@@ -1,0 +1,385 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__phone {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-item {
+    padding: 5px 25px;
+    border: 1px solid #000;
+}
+
+.phone {
+    font-size: 20px;
+}
+
+.header__nav {
+    flex: 1 1 25%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    flex: 1 1 25%;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px
+}
+
+.swiper {
+    width: 99%;
+    height: 500px;
+    max-width: 1500px;
+}
+
+.main__slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__slider-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__slider-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.main__slider-subtitle {
+    font-weight: 400;
+}
+
+.form {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+.form__item-input {
+    width: 100%;
+}
+
+.form__item+.form__item {
+    margin-top: 20px;
+}
+
+.form__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.form__item-label {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.form__item-label:last-child {
+    margin: 0px;
+}
+
+.form__btn {
+    justify-content: center;
+}
+
+.form__btn-item {
+    background-color: #0086FB;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.form__item-input {
+    padding: 5px;
+}
+
+.btn {
+    padding: 5px 30px;
+    background-color: #33A64B;
+    border-radius: 20px;
+    font-size: 19px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.main__slider-btn {
+    margin-top: 20px;
+}
+
+.slider__num {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+
+/* /////////////////////////////// */
+
+
+/*  Advantages  */
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__inner {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantages__item-img {
+    max-width: 64px;
+}
+
+.advantages__btn {
+    margin-top: 20px;
+}
+
+.advantages__item {
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex: 0 1 50%;
+    max-width: 400px;
+    align-items: flex-start;
+}
+
+
+/*  */
+
+.contacts-messagers__img {
+    width: 60px;
+}
+
+.contacts__inner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+
+.contacts__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__info {
+    text-align: center;
+}
+
+.section {
+    padding-top: 20px;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+.contacts__info-adress {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contacts__info-phone {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contacts__info-email {
+    font-size: 14px;
+}
+
+.contacts-messagers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts-messagers__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__info-name {
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.contacts-messagers__name {
+    margin-top: 6px;
+}
+
+.contacts__info-messager {
+    max-width: 200px;
+    padding: 15px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    display: none;
+}
+
+.modal-open {
+    display: flex;
+}
+
+.modal__inner {
+    max-width: 700px;
+    background-color: #fff;
+}
+
+.header-burger {
+    display: none;
+}
+
+.header-burger__linear {
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+}
+
+.header-burger__linear+.header-burger__linear {
+    margin-top: 5px;
+}
+
+.header__nav-close {
+    display: none;
+}
+
+.header__nav-close--acrive {
+    display: block;
+}
+
+@media screen and (max-width: 1008px) {
+    .container {
+        padding: 0px 10px;
+    }
+    .main__slider {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .main__slider-item {
+        flex-direction: column;
+    }
+    .advantages__item {
+        flex: 1 1 100%;
+    }
+    .contacts__content {
+        flex-direction: column;
+    }
+    .contacts__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts-messagers {
+        gap: 6px
+    }
+    .contacts__map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .main__slider-item {
+        flex-direction: column;
+    }
+    .header-burger {
+        display: block;
+        flex: 1 1 25%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__nav--active {
+        display: flex;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* align-items: center; */
+        /* background-color: #000; */
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav__list {
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 10px;
+        gap: 5px
+    }
+    .header__nav-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: 0px;
+        font-size: 20px;
+        background-color: transparent;
+    }
+}
