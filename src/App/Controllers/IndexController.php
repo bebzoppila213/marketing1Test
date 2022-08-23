@@ -3,7 +3,6 @@
 
     use Laminas\Diactoros\ServerRequest;
     use App\Email\Email;
-    use Laminas\Diactoros\Response\RedirectResponse;
     use MiladRahimi\PhpRouter\Url;
     use MiladRahimi\PhpRouter\View\View;
 

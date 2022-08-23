@@ -9,7 +9,7 @@
             $links = ['Главная'=> $url->make('index'), 
             'Преимущества' => $url->make('advantages'),
             'Контакты' => $url->make('contacts'),
-            ];
+                    ];
 
         return $links;
 
